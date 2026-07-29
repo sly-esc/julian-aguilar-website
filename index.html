@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julián Aguilar — Conferencista, Autor, Consultor</title>
+<meta name="description" content="Experiencias de comunicación, liderazgo y desarrollo consciente para personas, empresas e instituciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/monograma.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" data-od-id="site-header">
+  <div class="container">
+    <a href="#" class="header-logo" data-od-id="header-logo">
+      <img src="assets/images/logo-principal.png" alt="Julián Aguilar">
+      <span class="header-monogram"><img src="assets/images/monograma.png" alt="JA"></span>
+    </a>
+
+    <nav class="header-nav" data-od-id="header-nav">
+      <a href="#">Inicio</a>
+      <a href="#audiencia">Julián Aguilar</a>
+      <a href="#conferencias">Conferencias</a>
+      <a href="#soluciones">Formación</a>
+      <a href="#libro">Libro</a>
+      <a href="#medios">Medios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions" data-od-id="header-actions">
+      <div class="header-social">
+        <a href="https://wa.me/529982579830" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20las%20conferencias%2C%20programas%20y%20servicios%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-primary header-cta">Solicitar</a>
+    </div>
+
+    <button class="menu-toggle" data-od-id="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
+      <svg class="menu-icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="menu-icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu-backdrop" data-od-id="mobile-backdrop"></div>
+  <div class="mobile-menu" id="mobile-menu" data-od-id="mobile-menu">
+    <a href="#">Inicio</a>
+    <a href="#audiencia">Julián Aguilar</a>
+    <a href="#conferencias">Conferencias</a>
+    <a href="#soluciones">Formación</a>
+    <a href="#libro">Libro</a>
+    <a href="#medios">Medios</a>
+    <a href="#contacto">Contacto</a>
+    <div class="mobile-social">
+      <a href="https://wa.me/529982579830" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20las%20conferencias%2C%20programas%20y%20servicios%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="mobile-whatsapp">WhatsApp</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" data-od-id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">Julián Aguilar</div>
+        <h1 class="hero-title">Comunica con <span>propósito</span><br>Lidera con <span>conciencia</span><br>Transforma con <span>impacto</span></h1>
+        <p class="hero-subtitle">Conferencista, autor, consultor y formador de líderes</p>
+        <p class="hero-desc">Experiencias de comunicación, liderazgo y desarrollo consciente para personas, empresas e instituciones</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20las%20conferencias%2C%20programas%20y%20servicios%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-primary">Solicitar una conferencia</a>
+          <a href="#metodologia" class="btn btn-outline">Conocer la ruta de transformación</a>
+          <a href="https://wa.me/529982579830" target="_blank" rel="noopener" class="btn btn-outline-light">Hablar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-book-note">Autor de <a href="#libro">Despertar con Esperanza</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUTHORITY BAR ===== -->
+<section class="authority-bar" data-od-id="authority-bar">
+  <div class="container">
+    <div class="authority-grid">
+      <div class="authority-item reveal">
+        <div class="authority-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h4>Conferencista</h4>
+        <p>Audiencias presenciales y digitales</p>
+      </div>
+      <div class="authority-item reveal reveal-delay-1">
+        <div class="authority-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        </div>
+        <h4>Autor</h4>
+        <p>Despertar con Esperanza</p>
+      </div>
+      <div class="authority-item reveal reveal-delay-2">
+        <div class="authority-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h4>Consultor</h4>
+        <p>Liderazgo y comunicación</p>
+      </div>
+      <div class="authority-item reveal reveal-delay-3">
+        <div class="authority-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Formador</h4>
+        <p>Desarrollo consciente</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUDIENCE ===== -->
+<section class="audience" id="audiencia" data-od-id="audience">
+  <div class="container">
+    <div class="section-label">¿A quién ayuda?</div>
+    <h2 class="section-title">Personas, equipos e<br>instituciones que <span style="color: var(--accent);">transforman</span></h2>
+    <p class="section-desc">Experiencias diseñadas para quienes buscan desarrollar su potencial de liderazgo y comunicación</p>
+
+    <div class="audience-layout">
+      <div class="audience-image reveal">
+        <img src="assets/images/julian-aguilar-conferencia-01.JPG" alt="Julián Aguilar en conferencia" loading="lazy">
+      </div>
+      <div class="audience-list">
+        <div class="audience-item reveal reveal-delay-1">
+          <div class="audience-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h4>Personas y profesionales</h4>
+            <p>Desarrollo de liderazgo personal, comunicación asertiva y propósito consciente para quienes buscan crecer</p>
+          </div>
+        </div>
+        <div class="audience-item reveal reveal-delay-2">
+          <div class="audience-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Empresas y equipos</h4>
+            <p>Programas de formación ejecutiva que mejoran la comunicación interna, el liderazgo y la cohesión del equipo</p>
+          </div>
+        </div>
+        <div class="audience-item reveal reveal-delay-3">
+          <div class="audience-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <h4>Instituciones y universidades</h4>
+            <p>Conferencias y talleres para comunidades académicas que buscan inspirar a sus estudiantes y docentes</p>
+          </div>
+        </div>
+        <div class="audience-item reveal reveal-delay-4">
+          <div class="audience-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Organismos públicos</h4>
+            <p>Programas de comunicación y liderazgo para servidores públicos comprometidos con el cambio social</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUE PROP ===== -->
+<section class="value-prop" data-od-id="value-prop">
+  <div class="container">
+    <div class="value-prop-header reveal">
+      <div class="section-label">Propuesta de valor</div>
+      <h2 class="section-title">Transformar conocimiento en <span style="color: var(--accent);">experiencias</span> que inspiran</h2>
+      <p class="section-desc">Desarrollamos capacidades y generamos resultados con impacto real en personas, equipos y organizaciones</p>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-card-num">01</div>
+        <h4>Enfoque estratégico y humano</h4>
+        <p>Combinamos visión empresarial con sensibilidad humana para generar transformaciones profundas y sostenibles</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-card-num">02</div>
+        <h4>Metodologías prácticas</h4>
+        <p>Herramientas aplicables desde el primer día, diseñadas para producir cambios en la comunicación y el liderazgo</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <div class="value-card-num">03</div>
+        <h4>Comunicación que moviliza</h4>
+        <p>Capacidad de conectar con audiencias diversas y guiar hacia la acción con autenticidad y profundidad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOLUCIONES (merged Areas + Formation) ===== -->
+<section class="soluciones" id="soluciones" data-od-id="soluciones">
+  <div class="container">
+    <div class="soluciones-header reveal">
+      <div class="section-label">Soluciones integrales</div>
+      <h2 class="section-title">Áreas de <span style="color: var(--accent);">impacto</span></h2>
+    </div>
+
+    <div class="soluciones-grid">
+      <div class="solucion-card reveal reveal-delay-1" data-od-id="sol-conferencias">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h4>Conferencias</h4>
+        <p>Experiencias que inspiran, educan y movilizan audiencias en torno al liderazgo consciente</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+
+      <div class="solucion-card reveal reveal-delay-2" data-od-id="sol-formacion">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Formación</h4>
+        <p>Programas grupales para desarrollar habilidades de comunicación y liderazgo en equipos</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+
+      <div class="solucion-card reveal reveal-delay-3" data-od-id="sol-mentoria">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h4>Mentoría</h4>
+        <p>Acompañamiento personalizado para profesionales que buscan su siguiente nivel</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+
+      <div class="solucion-card reveal reveal-delay-1" data-od-id="sol-consultoria">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h4>Consultoría</h4>
+        <p>Asesoría estratégica en comunicación y liderazgo para organizaciones</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+
+      <div class="solucion-card reveal reveal-delay-2" data-od-id="sol-libros">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        </div>
+        <h4>Libros y publicaciones</h4>
+        <p>Contenido que trasciende y construye pensamiento consciente</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+
+      <div class="solucion-card reveal reveal-delay-3" data-od-id="sol-podcast">
+        <div class="solucion-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h4>Podcast y medios</h4>
+        <p>Conversaciones que construyen conciencia y comunidad</p>
+        <span class="card-cta">Conocer más →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<!-- CONTENIDO PROVISIONAL — Reemplazar con testimonios reales del cliente antes de publicar -->
+<section class="testimonios" data-od-id="testimonios">
+  <div class="container">
+    <div class="testimonios-header reveal">
+      <div class="section-label">Experiencias que dejan huella</div>
+      <h2 class="section-title">Voces que reflejan el <span style="color: var(--accent);">impacto</span></h2>
+      <p class="section-desc">Experiencias compartidas alrededor de la comunicación, el liderazgo y el desarrollo consciente</p>
+    </div>
+
+    <div class="testimonios-grid">
+      <div class="testimonio-card reveal reveal-delay-1">
+        <div class="testimonio-quote">“</div>
+        <p class="testimonio-texto">Una experiencia clara, cercana y práctica que invita a mirar el liderazgo desde una perspectiva más consciente</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">P</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Participante de conferencia</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card reveal reveal-delay-2">
+        <div class="testimonio-quote">“</div>
+        <p class="testimonio-texto">El contenido logró conectar reflexión y acción, generando conversaciones valiosas dentro del equipo</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">E</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Integrante de equipo empresarial</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card reveal reveal-delay-3">
+        <div class="testimonio-quote">“</div>
+        <p class="testimonio-texto">La metodología facilita comprender ideas complejas y llevarlas a situaciones reales de comunicación y liderazgo</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">F</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Participante de programa formativo</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card reveal reveal-delay-1">
+        <div class="testimonio-quote">“</div>
+        <p class="testimonio-texto">Una experiencia que impulsa el autoconocimiento, la responsabilidad y una forma más humana de dirigir</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">D</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Profesional en desarrollo</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card reveal reveal-delay-2">
+        <div class="testimonio-quote">“</div>
+        <p class="testimonio-texto">El mensaje inspira a transformar la manera en que nos comunicamos, colaboramos y construimos resultados</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">L</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Asistente a experiencia de liderazgo</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card reveal reveal-delay-3">
+        <div class="testimonio-quote">&ldquo;</div>
+        <p class="testimonio-texto">Una experiencia que ayuda a fortalecer la comunicaci&oacute;n, ampliar la perspectiva y asumir el liderazgo con mayor conciencia</p>
+        <div class="testimonio-footer">
+          <div class="testimonio-avatar">C</div>
+          <div class="testimonio-meta">
+            <span class="testimonio-perfil">Participante de experiencia de desarrollo</span>
+            <span class="testimonio-tag">Testimonio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN — Reemplazar con testimonios reales -->
+
+<!-- ===== METHODOLOGY ===== -->
+<section class="methodology" id="metodologia" data-od-id="methodology">
+  <div class="container">
+    <div class="methodology-header reveal">
+      <div class="section-label">Ruta de transformación</div>
+      <h2 class="section-title">Un camino para el <span style="color: var(--accent);">cambio consciente</span></h2>
+    </div>
+
+    <div class="methodology-image-wrap reveal reveal-delay-1" data-od-id="methodology-image">
+      <img src="assets/images/ruta-de-transformacion-principal.png" alt="Ruta de Transformación — Metodología Julián Aguilar" loading="lazy">
+      <div class="zoom-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+      </div>
+    </div>
+
+    <div class="methodology-detail reveal reveal-delay-2">
+      <p>Una metodología que guía a personas y organizaciones a través de etapas progresivas de autoconocimiento, desarrollo de habilidades comunicativas y liderazgo consciente, hasta alcanzar la transformación personal y colectiva</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONFERENCES ===== -->
+<section class="conferences" id="conferencias" data-od-id="conferences">
+  <div class="container">
+    <div class="conferences-header reveal">
+      <div>
+        <div class="section-label">Conferencias destacadas</div>
+        <h2 class="section-title">Temas que <span style="color: var(--accent);">transforman</span></h2>
+      </div>
+      <a href="#" class="btn btn-primary" style="flex-shrink: 0;">Conocer las conferencias</a>
+    </div>
+
+    <div class="conf-grid">
+      <div class="conf-card reveal reveal-delay-1" data-od-id="conf-liderazgo">
+        <img src="assets/images/julian-aguilar-conferencia-03.JPG" alt="Liderazgo" loading="lazy">
+        <div class="conf-card-overlay">
+          <h4>Liderazgo</h4>
+          <p>Liderar con propósito y conciencia en tiempos de cambio</p>
+        </div>
+      </div>
+      <div class="conf-card reveal reveal-delay-2" data-od-id="conf-comunicacion">
+        <img src="assets/images/julian-aguilar-conferencia-02.JPG" alt="Comunicación" loading="lazy">
+        <div class="conf-card-overlay">
+          <h4>Comunicación</h4>
+          <p>El poder de las palabras para inspirar y movilizar</p>
+        </div>
+      </div>
+      <div class="conf-card reveal reveal-delay-3" data-od-id="conf-desarrollo" style="background: var(--blue-corp); background-image: linear-gradient(rgba(8,26,50,0.5), rgba(8,26,50,0.5)), url(assets/images/foto4.JPG); background-size: cover; background-position: center 30%;">
+        <div class="conf-card-overlay" style="background: linear-gradient(0deg, rgba(8,26,50,0.7) 0%, transparent 50%);">
+          <h4>Desarrollo consciente</h4>
+          <p>Transformación personal para líderes del futuro</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOK ===== -->
+<section class="book" id="libro" data-od-id="book">
+  <div class="container">
+    <div class="book-layout">
+      <div class="book-visual reveal">
+        <div class="book-cover">
+          <img src="assets/images/lanzamiento-libro.jpg" alt="Despertar con Esperanza — Julián Aguilar" loading="lazy">
+        </div>
+        <button class="book-video-btn" data-video="assets/video/lanzamiento-libro-despertar-con-esperanza-video-principal-hd.mov" aria-label="Reproducir video del libro">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+      </div>
+
+      <div class="book-content reveal reveal-delay-1">
+        <div class="section-label">El libro</div>
+        <h2 class="section-title">Despertar con <span style="color: var(--accent);">Esperanza</span></h2>
+        <p style="font-family: var(--font-display); font-size: 18px; font-weight: 500; color: var(--light-muted); margin-bottom: 14px; letter-spacing: 0.01em;">La voz que se convirtió en legado</p>
+        <p>Una obra que nace del corazón y la experiencia, donde cada página invita a redescubrir el poder de la comunicación consciente y el liderazgo con propósito</p>
+
+        <a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20el%20libro%20Despertar%20con%20Esperanza%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20compartirme%20informaci%C3%B3n%20para%20adquirirlo%3F" target="_blank" rel="noopener" class="btn btn-primary">Quiero conocer el libro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACTO + EXPERIENCIAS (merged) ===== -->
+<section class="impacto" data-od-id="impacto">
+  <div class="container">
+    <div class="impacto-header reveal">
+      <div class="section-label">Impacto y experiencias</div>
+      <h2 class="section-title">Momentos que <span style="color: var(--accent);">dejan huella</span></h2>
+      <p class="section-desc">Conferencias, formaciones y encuentros que transforman a quienes participan</p>
+    </div>
+
+    <div class="impacto-grid">
+      <div class="impacto-card reveal reveal-delay-1" data-od-id="impacto-1">
+        <img src="assets/images/julian-aguilar-foto-grupal.JPG" alt="Comunidad" loading="lazy">
+        <div class="impacto-card-overlay"></div>
+        <div class="impacto-card-content">
+          <h4>Comunidad</h4>
+          <p>Grupos que crecen juntos en cada formación</p>
+        </div>
+      </div>
+      <div class="impacto-card reveal reveal-delay-2" data-od-id="impacto-2">
+        <img src="assets/images/entrega-reconocimientos-alumnos.JPG" alt="Reconocimientos" loading="lazy">
+        <div class="impacto-card-overlay"></div>
+        <div class="impacto-card-content">
+          <h4>Reconocimientos</h4>
+          <p>Instituciones que confían en el método</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEDIA ===== -->
+<section class="media-section" id="medios" data-od-id="media">
+  <div class="container">
+    <div class="media-header reveal">
+      <div class="section-label">Medios y contenido</div>
+      <h2 class="section-title">Voces que <span style="color: var(--accent);">construyen</span></h2>
+    </div>
+
+    <div class="media-grid">
+      <div class="media-card reveal reveal-delay-1" data-od-id="media-autobiografia">
+        <img src="assets/images/julian-aguilar-hero-original.JPG" alt="Autobiografía" loading="lazy">
+        <div class="media-card-overlay">
+          <div class="media-cat">Video</div>
+          <div class="media-card-play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h4>Autobiografía</h4>
+        </div>
+        <video preload="none" src="assets/video/autobiografia-dr-julian-aguilar-ultrahd.mp4" style="display: none;"></video>
+      </div>
+
+      <div class="media-card reveal reveal-delay-2" data-od-id="media-entrevista" style="background: var(--blue-oxford); background-image: linear-gradient(rgba(8,26,50,0.55), rgba(8,26,50,0.55)), url(assets/images/julian-aguilar-conferencia-01.JPG); background-size: cover; background-position: center;">
+        <div class="media-card-overlay" style="background: linear-gradient(0deg, rgba(8,26,50,0.35) 0%, rgba(8,26,50,0.15) 50%, rgba(8,26,50,0.5) 100%);">
+          <div class="media-cat" style="color: rgba(255,255,255,0.7);">Contenido</div>
+          <h4 style="color: #FFFFFF;">Entrevistas y participación en medios</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MANIFESTO ===== -->
+<section class="manifesto" data-od-id="manifesto">
+  <div class="container">
+    <div class="manifesto-content">
+      <p class="manifesto-phrase" data-reveal>Palabras que <span>inspiran</span></p>
+      <p class="manifesto-phrase" data-reveal>Conversaciones que <span>construyen</span></p>
+      <p class="manifesto-phrase" data-reveal>Liderazgo que <span>sirve</span></p>
+      <p class="manifesto-phrase" data-reveal>Conocimiento que se <span>comparte</span></p>
+      <p class="manifesto-phrase" data-reveal>Conciencia que <span>transforma</span></p>
+      <p class="manifesto-phrase-sub" data-reveal>Comunicación con autenticidad para dejar una huella y construir un legado</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter" data-od-id="newsletter">
+  <div class="container">
+    <div class="newsletter-inner reveal">
+      <div class="newsletter-header">
+        <div class="section-label">Mantente conectado</div>
+        <h2 class="section-title">Recibe contenido que <span style="color: var(--accent);">inspira</span></h2>
+        <p class="section-desc">Suscríbete para recibir reflexiones, herramientas y novedades sobre comunicación, liderazgo y desarrollo consciente</p>
+      </div>
+      <form class="newsletter-form" novalidate>
+        <div class="newsletter-fields">
+          <input type="text" class="newsletter-input" placeholder="Nombre (opcional)" aria-label="Nombre">
+          <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" aria-label="Correo electrónico" required>
+          <button type="submit" class="btn btn-primary">Quiero recibir contenido</button>
+        </div>
+        <p class="newsletter-message" data-od-id="newsletter-message"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta" data-od-id="final-cta">
+  <div class="container">
+    <div class="final-cta-content reveal">
+      <div class="section-label">¿Listo para dar el siguiente paso?</div>
+      <h2 class="section-title">Lleva una experiencia de <span style="color: var(--accent);">comunicación, liderazgo</span> y transformación a tu organización</h2>
+      <div class="final-cta-actions">
+        <a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20las%20conferencias%2C%20programas%20y%20servicios%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-primary">Solicitar una conferencia</a>
+        <a href="https://wa.me/529982579830" target="_blank" rel="noopener" class="btn btn-whatsapp">Hablar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contacto" data-od-id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-vertical.png" alt="Julián Aguilar" loading="lazy">
+        <p>Experiencias de comunicación, liderazgo y desarrollo consciente para personas, empresas e instituciones</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#audiencia">Julián Aguilar</a></li>
+          <li><a href="#conferencias">Conferencias</a></li>
+          <li><a href="#soluciones">Formación</a></li>
+          <li><a href="#libro">Libro</a></li>
+          <li><a href="#medios">Medios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Soluciones</h5>
+        <ul>
+          <li><a href="#soluciones">Conferencias</a></li>
+          <li><a href="#soluciones">Formación</a></li>
+          <li><a href="#soluciones">Mentoría</a></li>
+          <li><a href="#soluciones">Consultoría</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <div class="footer-contact">
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contacto@julianaguilar.com.mx">contacto@julianaguilar.com.mx</a>
+          </p>
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/529982579830" target="_blank" rel="noopener">+52 998 257 9830</a>
+          </p>
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cancún, Quintana Roo, México
+          </p>
+          <p style="font-size: 12px; color: var(--muted); margin-top: 6px;">Disponibilidad nacional e internacional</p>
+        </div>
+
+        <div class="footer-social-row">
+          <a href="https://wa.me/529982579830" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Julián Aguilar. Todos los derechos reservados.</p>
+      <p>Cancún, Quintana Roo, México</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/529982579830?text=Hola%2C%20me%20interesa%20conocer%20las%20conferencias%2C%20programas%20y%20servicios%20de%20Juli%C3%A1n%20Aguilar.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="whatsapp-float" data-od-id="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<!-- ===== VIDEO MODAL ===== -->
+<div class="video-modal" data-od-id="video-modal">
+  <div class="video-modal-content">
+    <button class="video-modal-close" data-od-id="video-modal-close">&times;</button>
+    <video controls playsinline preload="metadata"></video>
+  </div>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" data-od-id="lightbox">
+  <button class="lightbox-close" data-od-id="lightbox-close">&times;</button>
+  <img src="" alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
