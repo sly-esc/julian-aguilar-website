@@ -247,7 +247,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .header-logo { display: none; }
   .menu-toggle { display: none; }
   .hero {
-    padding-top: calc(var(--header-h) + 24px);
+    padding-top: 148px;
   }
 }
 
@@ -266,7 +266,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   background-color: #0A2144;
   background-image: url(../images/hero-julian-aguilar-premium-v2.png);
   background-size: cover;
-  background-position: center right;
+  background-position: right 42%;
   background-repeat: no-repeat;
 }
 .hero::after {
