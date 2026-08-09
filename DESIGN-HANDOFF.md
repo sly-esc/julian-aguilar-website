@@ -14,7 +14,7 @@ This archive is the source of truth for turning the design into production code.
 - HTML screens detected: 1
 - Stylesheets detected: 1
 - Script/component files detected: 1
-- Supporting assets detected: 24
+- Supporting assets detected: 62
 
 ## Responsive contract
 Validate the implementation across this 2025–2026 viewport matrix:
@@ -75,12 +75,42 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/images/bg-a-premium.png`
 - `assets/images/bg-b-luxury.png`
 - `assets/images/bg-c-glow.png`
+- `assets/images/conferencia-13.jpeg`
+- `assets/images/conferencia-14.jpeg`
+- `assets/images/conferencia-15.jpeg`
+- `assets/images/conferencia-16.jpeg`
+- `assets/images/conferencia-17.jpeg`
+- `assets/images/conferencia-18.jpeg`
+- `assets/images/conferencia-19.jpeg`
+- `assets/images/conferencia-20.jpeg`
+- `assets/images/conferencia-21.jpeg`
+- `assets/images/conferencia-22.jpeg`
+- `assets/images/conferencia-23.jpeg`
+- `assets/images/doctor.jpeg`
 - `assets/images/entrega-reconocimientos-alumnos.JPG`
+- `assets/images/foto-acompañado.jpeg`
+- `assets/images/foto-alumnos-grupal-1.jpeg`
 - `assets/images/foto4.JPG`
+- `assets/images/fotoacompañado-3.jpeg`
+- `assets/images/fotogrupal-4.jpeg`
+- `assets/images/fotoindividual-1.jpeg`
+- `assets/images/fotoindividual-2.jpeg`
+- `assets/images/fotoindividual-3.jpeg`
+- `assets/images/fotoindividual-4.jpeg`
+- `assets/images/fotoindividual-5.jpeg`
+- `assets/images/fotoindividual-6.jpeg`
+- `assets/images/hero-julian-aguilar-premium-v2.png`
 - `assets/images/hero-julian-aguilar-premium.png`
 - `assets/images/julian-aguilar-conferencia-01.JPG`
+- `assets/images/julian-aguilar-conferencia-010.jpeg`
 - `assets/images/julian-aguilar-conferencia-02.JPG`
 - `assets/images/julian-aguilar-conferencia-03.JPG`
+- `assets/images/julian-aguilar-conferencia-04.jpeg`
+- `assets/images/julian-aguilar-conferencia-05.jpeg`
+- `assets/images/julian-aguilar-conferencia-06.jpeg`
+- `assets/images/julian-aguilar-conferencia-07.jpeg`
+- `assets/images/julian-aguilar-conferencia-08.jpeg`
+- `assets/images/julian-aguilar-conferencia-09.jpeg`
 - `assets/images/julian-aguilar-foto-grupal.JPG`
 - `assets/images/julian-aguilar-hero-original.JPG`
 - `assets/images/julian-aguilar-hero-transparente.png`
@@ -89,8 +119,16 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/images/logo-vertical.png`
 - `assets/images/monograma.png`
 - `assets/images/ruta-de-transformacion-principal.png`
-- `assets/video/autobiografia-dr-julian-aguilar-ultrahd.mp4`
-- `assets/video/lanzamiento-libro-despertar-con-esperanza-video-principal-hd.mov`
+- `assets/images/thumbs/auto.jpg`
+- `assets/images/thumbs/ent1.jpg`
+- `assets/images/thumbs/ent3.jpg`
+- `assets/images/thumbs/ent4.jpg`
+- `assets/images/thumbs/tes1.jpg`
+- `assets/images/thumbs/tes2.jpg`
+- `assets/images/thumbs/tes3.jpg`
+- `assets/images/thumbs/tes4.jpg`
+- `assets/images/thumbs/tes5.jpg`
+- `assets/images/thumbs/tes6.jpg`
 - `brand-spec.md`
 - `Captura-de-pantalla-2026-07-27-202619-1.png`
 - `Captura-de-pantalla-2026-07-27-202619.png`

@@ -100,37 +100,68 @@
   // ===== Video modal =====
   var videoModal = document.querySelector('.video-modal');
   var videoPlayer = videoModal ? videoModal.querySelector('video') : null;
+  var videoIframe = videoModal ? videoModal.querySelector('.video-modal-iframe') : null;
   var videoClose = document.querySelector('.video-modal-close');
 
+  function toEmbedUrl(url) {
+    if (!url) return null;
+    var yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([A-Za-z0-9_-]{6,})/);
+    if (yt) return 'https://www.youtube.com/embed/' + yt[1];
+    var dr = url.match(/\/file\/d\/([A-Za-z0-9_-]+)/);
+    if (dr) return 'https://drive.google.com/file/d/' + dr[1] + '/preview';
+    return null;
+  }
+
   function openVideo(src) {
-    if (!videoModal || !videoPlayer) return;
-    videoPlayer.src = src;
+    if (!videoModal) return;
+    var embed = toEmbedUrl(src);
+    if (embed) {
+      videoIframe.src = embed;
+      videoIframe.style.display = 'block';
+      videoPlayer.style.display = 'none';
+    } else {
+      videoPlayer.src = src;
+      videoPlayer.style.display = 'block';
+      videoIframe.style.display = 'none';
+    }
     videoModal.classList.add('open');
     document.body.style.overflow = 'hidden';
-    setTimeout(function () { videoPlayer.play(); }, 100);
+    if (!embed) {
+      setTimeout(function () { videoPlayer.play(); }, 100);
+    }
   }
 
   function closeVideo() {
-    if (!videoModal || !videoPlayer) return;
+    if (!videoModal) return;
     videoModal.classList.remove('open');
     document.body.style.overflow = '';
     videoPlayer.pause();
     videoPlayer.removeAttribute('src');
     videoPlayer.load();
+    videoPlayer.style.display = 'block';
+    videoIframe.removeAttribute('src');
+    videoIframe.style.display = 'none';
   }
 
   // Book video button
   var bookVideoBtn = document.querySelector('.book-video-btn');
   if (bookVideoBtn) {
     bookVideoBtn.addEventListener('click', function () {
-      var src = this.getAttribute('data-video');
-      if (src) openVideo(src);
+      var ext = this.getAttribute('data-video-url');
+      if (ext) {
+        openVideo(ext);
+      }
     });
   }
 
   // Media cards
   document.querySelectorAll('.media-card').forEach(function (card) {
     card.addEventListener('click', function () {
+      var ext = this.getAttribute('data-video-url');
+      if (ext) {
+        openVideo(ext);
+        return;
+      }
       var vid = this.querySelector('video');
       if (vid && vid.getAttribute('src')) {
         openVideo(vid.getAttribute('src'));

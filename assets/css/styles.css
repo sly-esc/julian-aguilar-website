@@ -207,7 +207,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   padding-bottom: clamp(24px, 3vh, 32px);
   height: clamp(680px, 82vh, 820px);
   background-color: #0A2144;
-  background-image: url(../images/hero-julian-aguilar-premium.png);
+  background-image: url(../images/hero-julian-aguilar-premium-v2.png);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -416,6 +416,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .audience-image img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   transition: transform 0.6s ease;
 }
 .audience-image:hover img { transform: scale(1.03); }
@@ -964,18 +965,25 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   max-width: 800px;
   margin: 0 auto;
 }
+.media-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: var(--max-w);
+  gap: 16px;
+}
 .media-card {
   position: relative;
   aspect-ratio: 16/9;
   overflow: hidden;
   cursor: pointer;
 }
-.media-card img {
+.media-card img,
+.media-card video {
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform 0.6s ease;
 }
-.media-card:hover img { transform: scale(1.04); }
+.media-card:hover img,
+.media-card:hover video { transform: scale(1.04); }
 .media-card-overlay {
   position: absolute;
   inset: 0;
@@ -985,6 +993,14 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   align-items: center;
   justify-content: center;
   transition: background 0.4s;
+}
+.media-card.testimonio-video {
+  aspect-ratio: 4/5;
+}
+.media-card.testimonio-video video,
+.media-card.testimonio-video img {
+  object-fit: cover;
+  object-position: center 20%;
 }
 .media-card:hover .media-card-overlay { background: rgba(8,26,50,0.35); }
 .media-card-play {
@@ -1296,6 +1312,12 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   height: auto;
   display: block;
 }
+.video-modal-content iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  display: block;
+}
 .video-modal-close {
   position: absolute;
   top: -36px;
@@ -1405,6 +1427,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .book-layout { grid-template-columns: 1fr; gap: 36px; }
   .impacto-grid { grid-template-columns: 1fr; }
   .media-grid { grid-template-columns: 1fr; max-width: 500px; }
+  .media-grid-5 { grid-template-columns: repeat(3, 1fr); max-width: 900px; }
   .testimonios-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .authority-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -1549,6 +1572,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .final-cta-actions .btn { width: 100%; justify-content: center; }
   .whatsapp-float { bottom: 16px; right: 16px; width: 46px; height: 46px; }
   .whatsapp-float svg { width: 20px; height: 20px; }
+  .media-grid-5 { grid-template-columns: 1fr; max-width: 500px; }
   .solucion-card { padding: 36px 24px; }
   .section-title { font-size: 26px; }
   .section-label { font-size: 11px; }

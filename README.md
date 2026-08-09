@@ -37,18 +37,14 @@ Para integrarla posteriormente:
 
 ## Testimonios
 
-La sección testimonios contiene contenido provisional.
-Cada tarjeta incluye la etiqueta "Testimonio provisional" que debe eliminarse antes de publicar.
+La sección testimonios muestra 6 testimonios en video con miniatura, botón play y título breve.
 
-Para reemplazar con contenido real:
+Para reemplazar o actualizar:
 
 1. Localiza `<!-- ===== TESTIMONIALS ===== -->` en `index.html`
-2. Cada `.testimonio-card` contiene:
-   - `.testimonio-texto` — texto del testimonio
-   - `.testimonio-perfil` — perfil o cargo de la persona
-   - `.testimonio-avatar` — inicial en círculo (reemplazar por nombre completo si aplica)
-3. El cliente debe proporcionar:
-   - Texto del testimonio
-   - Nombre y cargo/institucion
-   - Autorización para publicación
-4. Eliminar la clase `.testimonio-tag` del HTML cuando los testimonios sean reales
+2. Cada `.testimonio-video` contiene:
+   - `<img>` — miniatura/poster del video
+   - `<video>` — archivo `testimonio1.mp4` a `testimonio6.mp4` en `assets/video/`
+   - `<h4>` — título breve del testimonio
+3. Si el cliente entrega videos nuevos, reemplaza los archivos en `assets/video/` y actualiza el `src` correspondiente
+4. Para recortar el inicio de un video, recorta el archivo antes de subirlo o ajusta el atributo de tiempo en el modal de video
