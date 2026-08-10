@@ -293,7 +293,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   padding-bottom: clamp(24px, 3vh, 32px);
   height: clamp(680px, 82vh, 820px);
   background-color: #0A2144;
-  background-image: url(../images/hero-julian-aguilar-premium-v2.png);
+  background-image: url(../images/hero-julian-aguilar-premium-v3.png);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -1056,6 +1056,12 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   max-width: var(--max-w);
   gap: 16px;
 }
+.media-grid-2 {
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--max-w);
+  gap: 16px;
+  margin-top: 16px;
+}
 .media-card {
   position: relative;
   aspect-ratio: 16/9;
@@ -1514,6 +1520,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .impacto-grid { grid-template-columns: 1fr; }
   .media-grid { grid-template-columns: 1fr; max-width: 500px; }
   .media-grid-5 { grid-template-columns: repeat(3, 1fr); max-width: 900px; }
+  .media-grid-2 { grid-template-columns: 1fr 1fr; max-width: 900px; }
   .testimonios-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .authority-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -1659,6 +1666,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .whatsapp-float { bottom: 16px; right: 16px; width: 46px; height: 46px; }
   .whatsapp-float svg { width: 20px; height: 20px; }
   .media-grid-5 { grid-template-columns: 1fr; max-width: 500px; }
+  .media-grid-2 { grid-template-columns: 1fr; max-width: 500px; }
   .solucion-card { padding: 36px 24px; }
   .section-title { font-size: 26px; }
   .section-label { font-size: 11px; }

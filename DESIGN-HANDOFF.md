@@ -14,7 +14,7 @@ This archive is the source of truth for turning the design into production code.
 - HTML screens detected: 1
 - Stylesheets detected: 1
 - Script/component files detected: 1
-- Supporting assets detected: 62
+- Supporting assets detected: 65
 
 ## Responsive contract
 Validate the implementation across this 2025–2026 viewport matrix:
@@ -100,6 +100,7 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/images/fotoindividual-5.jpeg`
 - `assets/images/fotoindividual-6.jpeg`
 - `assets/images/hero-julian-aguilar-premium-v2.png`
+- `assets/images/hero-julian-aguilar-premium-v3.png`
 - `assets/images/hero-julian-aguilar-premium.png`
 - `assets/images/julian-aguilar-conferencia-01.JPG`
 - `assets/images/julian-aguilar-conferencia-010.jpeg`
@@ -123,6 +124,8 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/images/thumbs/ent1.jpg`
 - `assets/images/thumbs/ent3.jpg`
 - `assets/images/thumbs/ent4.jpg`
+- `assets/images/thumbs/env1.jpg`
+- `assets/images/thumbs/env2.jpg`
 - `assets/images/thumbs/tes1.jpg`
 - `assets/images/thumbs/tes2.jpg`
 - `assets/images/thumbs/tes3.jpg`
