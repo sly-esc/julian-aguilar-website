@@ -275,10 +275,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   }
   .header-logo { display: none; }
   .menu-toggle { display: none; }
-  .hero {
-    padding-top: 0;
-    background-position: right top;
-  }
 }
 
 .mobile-menu,
@@ -298,6 +294,13 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1025px) {
+  .hero {
+    padding-top: 0;
+    background-position: right top;
+  }
 }
 .hero::after {
   content: '';
