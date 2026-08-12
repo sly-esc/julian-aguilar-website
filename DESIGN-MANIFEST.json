@@ -4,6 +4,7 @@
   "entryFile": "index.html",
   "sourceFiles": {
     "all": [
+      "api/newsletter.js",
       "assets/css/styles.css",
       "assets/images/bg-a-premium.png",
       "assets/images/bg-b-luxury.png",
@@ -82,6 +83,7 @@
       "assets/css/styles.css"
     ],
     "scriptsAndComponents": [
+      "api/newsletter.js",
       "assets/js/main.js"
     ],
     "assets": [
@@ -211,6 +213,7 @@
   },
   "interactions": {
     "source": [
+      "api/newsletter.js",
       "assets/js/main.js"
     ],
     "requiredStates": [

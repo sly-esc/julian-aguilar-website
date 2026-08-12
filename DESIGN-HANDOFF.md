@@ -13,7 +13,7 @@ This archive is the source of truth for turning the design into production code.
 - Primary entry: `index.html`
 - HTML screens detected: 1
 - Stylesheets detected: 1
-- Script/component files detected: 1
+- Script/component files detected: 2
 - Supporting assets detected: 67
 
 ## Responsive contract
@@ -69,6 +69,7 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/css/styles.css`
 
 ## Scripts/components
+- `api/newsletter.js`
 - `assets/js/main.js`
 
 ## Assets and supporting files

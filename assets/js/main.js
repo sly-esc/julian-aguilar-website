@@ -232,16 +232,19 @@
     });
   });
 
-  // ===== Newsletter validation =====
+  // ===== Newsletter: validación y envío =====
   var newsletterForm = document.querySelector('.newsletter-form');
   var newsletterMsg = document.querySelector('.newsletter-message');
 
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', function (e) {
       e.preventDefault();
+      var nameInput = this.querySelector('input[type="text"]');
       var emailInput = this.querySelector('input[type="email"]');
+      var name = nameInput ? nameInput.value.trim() : '';
       var email = emailInput.value.trim();
       var msg = newsletterMsg;
+      var submitBtn = this.querySelector('button[type="submit"]');
 
       msg.className = 'newsletter-message';
 
@@ -259,10 +262,29 @@
         return;
       }
 
-      msg.textContent = 'Gracias por suscribirte — pronto recibirás contenido que inspira';
-      msg.classList.add('success');
-      this.querySelector('input[type="text"]').value = '';
-      emailInput.value = '';
+      var originalBtnText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando…';
+
+      fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name, email: email })
+      }).then(function (res) {
+        if (!res.ok) throw new Error('network');
+        return res.json();
+      }).then(function () {
+        msg.textContent = 'Gracias por suscribirte — pronto recibirás contenido que inspira';
+        msg.classList.add('success');
+        if (nameInput) nameInput.value = '';
+        emailInput.value = '';
+      }).catch(function () {
+        msg.textContent = 'No pudimos completar el envío. Inténtalo de nuevo';
+        msg.classList.add('error');
+      }).then(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      });
     });
   }
 

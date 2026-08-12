@@ -18,15 +18,25 @@ Homepage premium para Julián Aguilar, conferencista, autor y consultor internac
 
 ## Newsletter
 
-La sección newsletter incluye validación visual del campo email (formato y obligatoriedad).
-La suscripción no está conectada a un endpoint real.
+La sección newsletter valida el campo email (formato y obligatoriedad) y envía los datos
+al correo oficial `julianaguilar@gmail.com` mediante una Serverless Function de Vercel.
 
-Para integrarla posteriormente:
+Archivos:
 
-1. Localiza el bloque `newsletter-form` en `index.html`
-2. Reemplaza `e.preventDefault()` en `assets/js/main.js` por la llamada al servicio de newsletter (Mailchimp, MailerLite, etc.)
-3. Añade el endpoint en el atributo `action` del formulario o mediante fetch
-4. Actualiza el mensaje de éxito/error según la respuesta del servicio
+- `api/newsletter.js` — Serverless Function que procesa el POST y envía el correo vía Resend
+- `assets/js/main.js` — hace `fetch POST /api/newsletter`, muestra éxito/error, sin recargar la página
+
+### Configuración en Vercel
+
+Antes de que el formulario funcione en producción, define estas variables de entorno
+en Vercel (Dashboard → Project → Settings → Environment Variables):
+
+- `RESEND_API_KEY` — API key del servicio Resend (https://resend.com). El correo se
+  envía desde `onboarding@resend.dev`; para enviar desde un dominio propio, verifica
+  el dominio en Resend y actualiza el campo `from` en `api/newsletter.js`.
+- `CONTACT_EMAIL` — opcional. Valor por defecto: `julianaguilar@gmail.com`
+
+No se exponen credenciales en el frontend: el navegador solo hace POST a `/api/newsletter`.
 
 ## Notas
 
